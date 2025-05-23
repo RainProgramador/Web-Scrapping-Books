@@ -5,6 +5,8 @@ Guia Basica:
 Ejecuta el archivo main.py.
 Los libros se descargaran en Documentos/LibrosDescargados, esta ruta se puede cambiar en el config.py.
 La libreria usada para descargar los archivos es Libgen.is
+Recuerda descargar selenium haciendo "pip install selenium" en una consola
+Y obviamente tener descargado python JAJAJAJA
 
 Cambios:
 Se modularizo el script
