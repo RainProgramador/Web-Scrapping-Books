@@ -11,7 +11,8 @@ from utils.downloader import esperar_descarga_completa
 
 def iniciar_driver():
     options = webdriver.ChromeOptions()
-    options.add_argument("--headless=new")
+    #options.add_argument("--headless=new")
+    options.add_argument("--window-size=1280,720")
     # Configuración de descargas
     prefs = {"download.default_directory": RUTA_DESCARGAS}
     options.add_experimental_option("prefs", prefs)
