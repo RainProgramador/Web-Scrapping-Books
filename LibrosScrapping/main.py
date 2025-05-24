@@ -23,6 +23,7 @@ from utils.bienvenida import BienvenidaUsuario
 BienvenidaUsuario()
 
 print("Iniciando el programa...")
+verificar_dependencia("selenium", "selenium")
 verificar_dependencia("webdriver_manager", "webdriver-manager")
 time.sleep(2)
 
