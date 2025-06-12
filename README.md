@@ -1,21 +1,39 @@
-# Web-Scrapping-Books
-Proyecto de web scrapping
+# 📚 Web-Scrapping-Books
+> Un proyecto de programación hecho con amor
 
-Guia Basica:
-Ejecuta el archivo main.py.
-Los libros se descargaran en Documentos/LibrosDescargados, esta ruta se puede cambiar en el config.py.
-La libreria usada para descargar los archivos es Libgen.is
-Recuerda descargar selenium haciendo "pip install selenium" en una consola
-Y obviamente tener descargado python JAJAJAJA
+Este proyecto fue creado con la intención de aprender sobre **web scrapping** y mejorar mis habilidades en **Python**.
 
-Cambios:
-Se modularizo el script
-Se añadio un script que verifica si el archivo se descargo (downloader.py)
-Se mejoro el manejo de los errores en el script de libgen_scraper.py
+<img src="foto.png" width="200"/> Miauuu
 
-Cosas a mejorar a futuro:
-Lista de libros
-Añadir mas librerias
-Mejorar la interfaz
+⭐ **¡Danos una estrella, porfis!**  
+Así puedo seguir creando estas vainas hermosas ✨
 
-Script creado por Rain.btw
+---
+
+## 🚀 Guía Básica
+
+1. Descargar e instalar [Python](https://www.python.org/)
+2. Descargar este repositorio
+3. Ejecutar `main.py` desde tu terminal o IDE favorita
+
+---
+
+## 🔥 Cambios Recientes
+
+- ✅ El script ahora descarga automáticamente las dependencias
+- ✅ Se creó `menu.py` para brindar un menú interactivo al usuario
+- ✅ Se agregó una lista de libros descargados gestionada con **pandas**
+- ✅ ¡Ahora el script tiene colores! 🎨
+- ✅ Se solucionaron errores del script anterior
+
+---
+
+## 👤 Autor
+
+Script creado con cariño por **Rain.btw**
+
+**Versión 1.2**
+
+---
+
+💬 *"Gracias por pasar por aquí💖"*
