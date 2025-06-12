@@ -1,11 +1,11 @@
 # main.py
-import time
-import subprocess, sys, importlib.util
-
+#Se inicia el programa
+#Funcion para verificar si colorama esta instalado
 def verificar_dependencia(modulo_nombre, paquete_pip=None):
     if paquete_pip is None:
         paquete_pip = modulo_nombre
     if importlib.util.find_spec(modulo_nombre) is None:
+        print("Este programa necesita el modulo colorama para funcionar correctamente.")
         print(f"[!] El módulo '{modulo_nombre}' no está instalado.")
         respuesta = input(f"¿Deseas instalar '{paquete_pip}' ahora? (s/n): ").strip().lower()
         if respuesta == 's':
@@ -18,20 +18,11 @@ def verificar_dependencia(modulo_nombre, paquete_pip=None):
         else:
             print("[-] El programa no puede continuar sin este módulo.")
             sys.exit(1)
+    else:
+        print(f"[✓] El módulo '{modulo_nombre}' ya está instalado correctamente.")
 
-from utils.bienvenida import BienvenidaUsuario
+from utils.menu import BienvenidaUsuario
 BienvenidaUsuario()
 
-print("Iniciando el programa...")
-verificar_dependencia("selenium", "selenium")
-verificar_dependencia("webdriver_manager", "webdriver-manager")
-time.sleep(2)
-
-from scraper.libgen_scraper import buscar_y_descargar
-from utils.storage import init_db, guardar_libro
-
-init_db()
-nombre = input("¿Qué libro deseas buscar?: ")
-titulo, enlace = buscar_y_descargar(nombre)
-guardar_libro(titulo, enlace)
-print("Libro guardado en la base de datos.")
+from utils.menu import Menu_Options
+Menu_Options()
