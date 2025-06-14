@@ -1,4 +1,8 @@
 # main.py
+import importlib.util
+import subprocess
+import sys
+
 #Se inicia el programa
 #Funcion para verificar si colorama esta instalado
 def verificar_dependencia(modulo_nombre, paquete_pip=None):
